@@ -68,13 +68,6 @@ export interface HTMLParserOptions extends CompilerOptions {
   comment?: (content: string, start: number, end: number) => void
 }
 
-export function parseHTML(html, options: HTMLParserOptions) {
-  const stack: any[] = []
-  const expectHTML = options.expectHTML
-  const isUnaryTag = options.isUnaryTag || no
-  const canBeLeftOpenTag = options.canBeLeftOpenTag || no
-  let index = 0
-  let last, lastTag
   while (html) {
     last = html
     // Make sure we're not in a plaintext content element like script/style
