@@ -6,18 +6,6 @@ import { genAssignmentCode } from '../directives/model'
 import { extend, cached, no, camelize, hyphenate } from 'shared/util'
 import { isIE, isEdge, isServerRendering } from 'core/util/env'
 
-import {
-  addProp,
-  addAttr,
-  baseWarn,
-  addHandler,
-  addDirective,
-  getBindingAttr,
-  getAndRemoveAttr,
-  getRawBindingAttr,
-  pluckModuleFunction,
-  getAndRemoveAttrByRegex
-} from '../helpers'
 
 import {
   ASTAttr,
